@@ -3,11 +3,11 @@
   <title>Glimmer Grove Academy</title>
   
   <subtitle>After School, Chinese Language, Arts &amp; Enrichment</subtitle>
-  <link href="https://glimmergroveacademy.github.io/en/atom.xml" rel="self"/>
+  <link href="https://glimmergroveacademy.com/en/atom.xml" rel="self"/>
   
-  <link href="https://glimmergroveacademy.github.io/en/"/>
+  <link href="https://glimmergroveacademy.com/en/"/>
   <updated>2026-09-13T05:33:43.198Z</updated>
-  <id>https://glimmergroveacademy.github.io/en/</id>
+  <id>https://glimmergroveacademy.com/en/</id>
   
   <author>
     <name>Glimmer Grove Academy</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Glimmer Grove Academy</title>
-    <link href="https://glimmergroveacademy.github.io/en/2026/07/18/hello-world/"/>
-    <id>https://glimmergroveacademy.github.io/en/2026/07/18/hello-world/</id>
+    <link href="https://glimmergroveacademy.com/en/2026/07/18/hello-world/"/>
+    <id>https://glimmergroveacademy.com/en/2026/07/18/hello-world/</id>
     <published>2026-07-18T14:00:00.000Z</published>
     <updated>2026-09-13T05:33:43.198Z</updated>
     
@@ -34,9 +34,9 @@
     
     
     
-    <category term="Glimmer Grove Academy" scheme="https://glimmergroveacademy.github.io/en/tags/Glimmer-Grove-Academy/"/>
+    <category term="Glimmer Grove Academy" scheme="https://glimmergroveacademy.com/en/tags/Glimmer-Grove-Academy/"/>
     
-    <category term="Afterschool Program" scheme="https://glimmergroveacademy.github.io/en/tags/Afterschool-Program/"/>
+    <category term="Afterschool Program" scheme="https://glimmergroveacademy.com/en/tags/Afterschool-Program/"/>
     
   </entry>
   
