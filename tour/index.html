@@ -409,15 +409,25 @@
 
       fetch(endpoint, {
         method: 'POST',
-        mode: 'no-cors',
+        mode: 'cors',
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(payload)
-      }).then(function () {
+      }).then(function (response) {
+        if (!response.ok) {
+          throw new Error('预约未能提交，请稍后重试，或邮件联系 glimmergroveacademy@gmail.com。');
+        }
+        return response.json().catch(function () {
+          throw new Error('未收到预约确认，请联系我们核实后再重试。');
+        });
+      }).then(function (result) {
+        if (!result || result.ok !== true) {
+          throw new Error(result && result.message || '预约未能提交，请稍后重试，或邮件联系 glimmergroveacademy@gmail.com。');
+        }
         form.reset();
         setMinDate(form);
         setStatus(form, '预约已提交，谢谢！我们会尽快联系你确认参观时间。', 'success');
-      }).catch(function () {
-        setStatus(form, '提交暂时没有成功，请稍后再试，或直接邮件联系 glimmergroveacademy@gmail.com。', 'error');
+      }).catch(function (error) {
+        setStatus(form, error.message || '提交暂时没有成功，请稍后再试，或直接邮件联系 glimmergroveacademy@gmail.com。', 'error');
       }).finally(function () {
         if (button) button.disabled = false;
       });
